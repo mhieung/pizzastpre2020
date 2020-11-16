@@ -11,7 +11,9 @@ document.getElementById('login').addEventListener('click', e => {
     usersRef.orderByChild('email').equalTo(email).on("value", function (snapshot) {
         snapshot.forEach(function (data) {
             if (data.val().password == password) {
-                window.location.href = 'index.html'
+                sessionStorage.setItem("user_key", data.key);
+                sessionStorage.setItem("user_email", data.email);
+                window.location.href = 'list.html'
             } else {
                 alert('wrong email or password');
             }
