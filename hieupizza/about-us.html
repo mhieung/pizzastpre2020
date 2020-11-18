@@ -6,26 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Elvira Fash - Fashion Enthusiast</title>
-    <meta name="description"
-        content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
+    <title>Hieu's Pizza</title>
+    <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
 
     <link href="https://fonts.googleapis.com/css?family=Overpass:300,400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="dist/assets/packages/owl-carousel/owl.carousel.css">
     <link rel="stylesheet" href="dist/assets/packages/animate/animate.css">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/o2system-venus-ui@1.1.0/dist/venus-ui.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" href="dist/assets/css/theme.css">
     <link rel="canonical" href="http://localhost:4000/index.html">
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-database.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-auth.js"></script>
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-                     https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-analytics.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 
@@ -324,14 +315,9 @@
                                                 Home
                                             </a>
                                         </li>
-                                        <li class="breadcrumb-item">
-                                            <a href="#">
-                                                Shop
-                                            </a>
-                                        </li>
                                         <li class="breadcrumb-item active" aria-current="page">
                                             <a href="#">
-                                                Cart
+                                                About Us
                                             </a>
                                         </li>
                                     </ul>
@@ -341,97 +327,215 @@
                     </div>
                 </div>
             </div>
-            <div class="section list-products">
+            <div class="section about-us">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-12">
-                            <div class="cart-table table-responsive">
-                                <table class="table table-bordered" id="cart_product">
-                                    <thead>
-                                        <tr>
-                                            <th class="pro-thumbnail">Thumbnail</th>
-                                            <th class="pro-title">Topping</th>
-                                            <th class="pro-price">Price</th>
-                                            <th class="pro-title">Crust</th>
-                                            <th class="pro-price">Price</th>
-                                            <th class="pro-subtotal">Total</th>
-                                            <th class="pro-remove">Remove</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td class="pro-thumbnail">
-                                                <a href="#">
-                                                    <img class="img-fluid" src="dist/assets/img/product-1.jpg"
-                                                        alt="Product" />
-                                                </a>
-                                            </td>
-                                            <td class="pro-title">
-                                                <a href="#">Endeavor Daytrip</a>
-                                            </td>
-                                            <td class="pro-price">
-                                                <span>$295.00</span>
-                                            </td>
-                                            <td class="pro-title">
-                                                <a href="#">Endeavor Daytrip</a>
-                                            </td>
-                                            <td class="pro-price">
-                                                <span>$295.00</span>
-                                            </td>
-                                            <td class="pro-quantity">
-                                                <div class="pro-qty">
-                                                    <input type="text" value="1">
-                                                </div>
-                                            </td>
-                                            <td class="pro-subtotal">
-                                                <span>$295.00</span>
-                                            </td>
-                                            <td class="pro-remove">
-                                                <a href="#">
-                                                    <i class="fa fa-trash"></i>
-                                                </a>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                        <div class="col-xl-6 col-lg-6">
+                            <div class="about-text-wrap">
+                                <h2><span>Provide Best</span>Product For You</h2>
+                                <p>We provide the best Beard oile all over the world. We are the worldd best store in indi for Beard Oil.
+                                    You can buy our product without any hegitation because they truste us and buy our product without any
+                                    hagitation because they belive and always happy buy our product.</p>
+                                <p>Some of our customer say’s that they trust us and buy our product without any hagitation because they
+                                    belive us and always happy to buy our product.</p>
+                                <p>We provide the beshat they trusted us and buy our product without any hagitation because they belive us
+                                    and always happy to buy.</p>
                             </div>
-
-                            <div class="cart-update-option d-block d-md-flex justify-content-between">
-                                <div class="apply-coupon-wrapper">
-                                    <form action="#" method="post" class=" d-block d-md-flex">
-                                        <input type="text" placeholder="Enter Your Coupon Code" required />
-                                        <button class="square-btn">Apply Coupon</button>
-                                    </form>
-                                </div>
-                                <div class="cart-update">
-                                    <a href="#" class="square-btn">Update Cart</a>
-                                </div>
+                        </div>
+                        <div class="col-xl-5 col-lg-6 ml-auto">
+                            <div class="about-image-wrap">
+                                <img src="dist/assets/img/about.jpg" alt="About" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section team-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="section-title text-center">
+                                <p>our creative team member</p>
+                                <h2>our creative team</h2>
                             </div>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-lg-5 ml-auto">
-                            <div class="cart-calculator-wrapper">
-                                <div class="cart-calculate-items">
-                                    <h3>Cart Totals</h3>
-                                    <div class="table-responsive">
-                                        <table class="table">
-                                            <tr>
-                                                <td>Sub Total</td>
-                                                <td>$230</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Shipping</td>
-                                                <td>$70</td>
-                                            </tr>
-                                            <tr class="total">
-                                                <td>Total</td>
-                                                <td class="total-amount">$300</td>
-                                            </tr>
-                                        </table>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="team-member">
+                                <div class="team-thumb img-full">
+                                    <img src="dist/assets/img/user-1.jpg" alt="">
+                                    <div class="team-social">
+                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                        <a href="#"><i class="fab fa-twitter"></i></a>
+                                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                                        <a href="#"><i class="fab fa-google-plus-g"></i></a>
                                     </div>
                                 </div>
-                                <a href="checkout.html" class="square-btn d-block text-center">Proceed To Checkout</a>
+                                <div class="team-content text-center">
+                                    <h3>Jonathan Scott</h3>
+                                    <h6>CEO</h6>
+                                    <p>Amadea Shop is a very slick and clean e-commerce template with endless possibilities.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="team-member">
+                                <div class="team-thumb img-full">
+                                    <img src="dist/assets/img/user-2.jpg" alt="">
+                                    <div class="team-social">
+                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                        <a href="#"><i class="fab fa-twitter"></i></a>
+                                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                                        <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                                    </div>
+                                </div>
+                                <div class="team-content text-center">
+                                    <h3>oliver bastin</h3>
+                                    <h6>designer</h6>
+                                    <p>Amadea Shop is a very slick and clean e-commerce template with endless possibilities.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="team-member">
+                                <div class="team-thumb img-full">
+                                    <img src="dist/assets/img/user-3.jpg" alt="">
+                                    <div class="team-social">
+                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                        <a href="#"><i class="fab fa-twitter"></i></a>
+                                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                                        <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                                    </div>
+                                </div>
+                                <div class="team-content text-center">
+                                    <h3>erik jonson</h3>
+                                    <h6>developer</h6>
+                                    <p>Amadea Shop is a very slick and clean e-commerce template with endless possibilities.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="team-member">
+                                <div class="team-thumb img-full">
+                                    <img src="dist/assets/img/user-4.jpg" alt="">
+                                    <div class="team-social">
+                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                        <a href="#"><i class="fab fa-twitter"></i></a>
+                                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                                        <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                                    </div>
+                                </div>
+                                <div class="team-content text-center">
+                                    <h3>maria mandy</h3>
+                                    <h6>marketing officer</h6>
+                                    <p>Amadea Shop is a very slick and clean e-commerce template with endless possibilities.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section testimonial-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="section-title text-center">
+                                <p class="text-white">our client say</p>
+                                <h2 class="text-white">testimonial</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="owl-carousel owl-theme" id="testimonial">
+                                <div class="item">
+                                    <div class="testimonial-item">
+                                        <div class="testimonial-thumb">
+                                            <img src="dist/assets/img/user-1.jpg">
+                                        </div>
+                                        <div class="testimonial-content text-center">
+                                            <p>Etiam rhoncus congue arcu sed interdum. Cras dolor diam, accumsan eu aliquam eu, luctus vehicula velit. Nam eget tortor ut felis fermentum sodales ac eu lacus. Etiam rhoncus congue arcu sed interdum. Cras dolor diam,</p>
+                                            <h3>
+                                                <a href="#">
+                                                    Elizabeth Taylor
+                                                </a>
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="testimonial-item">
+                                        <div class="testimonial-thumb">
+                                            <img src="dist/assets/img/user-2.jpg">
+                                        </div>
+                                        <div class="testimonial-content text-center">
+                                            <p>Etiam rhoncus congue arcu sed interdum. Cras dolor diam, accumsan eu aliquam eu, luctus vehicula velit.
+                                                Nam eget tortor ut felis fermentum sodales ac eu lacus. Etiam rhoncus congue arcu sed interdum. Cras
+                                                dolor diam,</p>
+                                            <h3>
+                                                <a href="#">
+                                                    Elizabeth Taylor
+                                                </a>
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="testimonial-item">
+                                        <div class="testimonial-thumb">
+                                            <img src="dist/assets/img/user-3.jpg">
+                                        </div>
+                                        <div class="testimonial-content text-center">
+                                            <p>Etiam rhoncus congue arcu sed interdum. Cras dolor diam, accumsan eu aliquam eu, luctus vehicula velit.
+                                                Nam eget tortor ut felis fermentum sodales ac eu lacus. Etiam rhoncus congue arcu sed interdum. Cras
+                                                dolor diam,</p>
+                                            <h3>
+                                                <a href="#">
+                                                    Elizabeth Taylor
+                                                </a>
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section choosing-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="section-title text-center">
+                                <p>our core service</p>
+                                <h2>why choose us</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="single-choose-item text-center">
+                                <i class="fa fa-globe"></i>
+                                <h4>free shipping</h4>
+                                <p>Amadea Shop is a very slick and clean e-commerce template with endless possibilities.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="single-choose-item text-center">
+                                <i class="fa fa-plane"></i>
+                                <h4>fast delivery</h4>
+                                <p>Amadea Shop is a very slick and clean e-commerce template with endless possibilities.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="single-choose-item text-center">
+                                <i class="fa fa-comments"></i>
+                                <h4>customers support</h4>
+                                <p>Amadea Shop is a very slick and clean e-commerce template with endless possibilities.</p>
                             </div>
                         </div>
                     </div>
@@ -451,8 +555,7 @@
                             </div>
                             <div class="newsletter-box">
                                 <form id="mc-form">
-                                    <input type="email" id="mc-email" autocomplete="off"
-                                        placeholder="Your Email address">
+                                    <input type="email" id="mc-email" autocomplete="off" placeholder="Your Email address">
                                     <button class="newsletter-btn" id="mc-submit">
                                         <i class="far fa-envelope"></i>
                                     </button>
@@ -474,96 +577,6 @@
                                 <a href="#"><i class="fa fa-rss"></i></a>
                                 <a href="#"><i class="fab fa-youtube"></i></a>
                                 <a href="#"><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="widget-area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="footer-widget">
-                            <div class="footer-widget-title">
-                                <h3>shipping and delivery</h3>
-                            </div>
-                            <div class="footer-widget-body">
-                                <p>Here you can read some details about a nifty little lifecycle of your order's
-                                    journey from
-                                    the time you place your order to your new treasures arriving at your doorstep.</p>
-                            </div>
-                            <div class="footer-widget-title mt-4">
-                                <h3>payment method</h3>
-                            </div>
-                            <div class="footer-widget-body">
-                                <p>It is equally important to choose the solution which offers a specific selection of
-                                    credit
-                                    cards. We take Visa & MasterCard as they are widely used by cyber customers.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-6 col-sm-6 col-6">
-                        <div class="footer-widget">
-                            <div class="footer-widget-title">
-                                <h3>useful link</h3>
-                            </div>
-                            <div class="footer-widget-body">
-                                <ul class="useful-link">
-                                    <li><a href="list.html">Our Products</a></li>
-                                    <li><a href="account.html">Account</a></li>
-                                    <li><a href="wishlist.html">Wishlist</a></li>
-                                    <li><a href="faq.html">Faq</a></li>
-                                    <li><a href="about-us.html">About us</a></li>
-                                    <li><a href="contact-us.html">contact us</a></li>
-                                    <li><a href="login.html">login/signup</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-6 col-sm-6 col-6">
-                        <div class="footer-widget">
-                            <div class="footer-widget-title">
-                                <h3>our company</h3>
-                            </div>
-                            <div class="footer-widget-body">
-                                <ul class="useful-link">
-                                    <li><a href="list.html">Our Products</a></li>
-                                    <li><a href="account.html">Account</a></li>
-                                    <li><a href="wishlist.html">Wishlist</a></li>
-                                    <li><a href="faq.html">Faq</a></li>
-                                    <li><a href="about-us.html">About us</a></li>
-                                    <li><a href="contact-us.html">contact us</a></li>
-                                    <li><a href="login.html">login/signup</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="footer-widget profile-company">
-                            <div class="footer-widget-title pb-3">
-                                <div class="footer-logo">
-                                    <a href="list.html">
-                                        <img src="dist/assets/img/logo/hieu.png" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="footer-widget-body">
-                                <ul class="address-box">
-                                    <li>
-                                        <span>ADDRESS:</span>
-                                        <p>Taman Kopo Indah 5, Sommerville 7 38<br>
-                                            Bandung, Indonesia</p>
-                                    </li>
-                                    <li>
-                                        <span>call us now:</span>
-                                        <p>+628192891821</p>
-                                    </li>
-                                    <li>
-                                        <span>email:</span>
-                                        <p>email@yourdomain.com</p>
-                                    </li>
-                                </ul>
                             </div>
                         </div>
                     </div>
@@ -641,11 +654,10 @@
     </div>
     <!-- Scroll to Top End -->
 
-    <script type="text/javascript" src="dist/assets/js/firebaseCon.js"></script>
     <script type="text/javascript" src="dist/venus-ui.js"></script>
     <script type="text/javascript" src="dist/assets/packages/owl-carousel/owl.carousel.js"></script>
+    <script type="text/javascript" src="dist/assets/packages/nice-select/nice-select.js"></script>
     <script type="text/javascript" src="dist/assets/js/theme.js"></script>
-    <script type="text/javascript" src="dist/assets/js/cart.js"></script>
 </body>
 
 </html>

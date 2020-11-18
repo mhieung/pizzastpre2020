@@ -6,26 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Elvira Fash - Fashion Enthusiast</title>
-    <meta name="description"
-        content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
+    <title>Hieu's Pizza</title>
+    <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
 
     <link href="https://fonts.googleapis.com/css?family=Overpass:300,400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="dist/assets/packages/owl-carousel/owl.carousel.css">
     <link rel="stylesheet" href="dist/assets/packages/animate/animate.css">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/o2system-venus-ui@1.1.0/dist/venus-ui.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/o2system-venus-ui@1.1.0/dist/venus-ui.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" href="dist/assets/css/theme.css">
     <link rel="canonical" href="http://localhost:4000/index.html">
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-database.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-auth.js"></script>
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-                     https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-analytics.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 
@@ -324,14 +315,9 @@
                                                 Home
                                             </a>
                                         </li>
-                                        <li class="breadcrumb-item">
-                                            <a href="#">
-                                                Shop
-                                            </a>
-                                        </li>
                                         <li class="breadcrumb-item active" aria-current="page">
                                             <a href="#">
-                                                Cart
+                                                Faq
                                             </a>
                                         </li>
                                     </ul>
@@ -341,97 +327,225 @@
                     </div>
                 </div>
             </div>
-            <div class="section list-products">
+            <div class="section faq-main-wrapper">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-12">
-                            <div class="cart-table table-responsive">
-                                <table class="table table-bordered" id="cart_product">
-                                    <thead>
-                                        <tr>
-                                            <th class="pro-thumbnail">Thumbnail</th>
-                                            <th class="pro-title">Topping</th>
-                                            <th class="pro-price">Price</th>
-                                            <th class="pro-title">Crust</th>
-                                            <th class="pro-price">Price</th>
-                                            <th class="pro-subtotal">Total</th>
-                                            <th class="pro-remove">Remove</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td class="pro-thumbnail">
-                                                <a href="#">
-                                                    <img class="img-fluid" src="dist/assets/img/product-1.jpg"
-                                                        alt="Product" />
-                                                </a>
-                                            </td>
-                                            <td class="pro-title">
-                                                <a href="#">Endeavor Daytrip</a>
-                                            </td>
-                                            <td class="pro-price">
-                                                <span>$295.00</span>
-                                            </td>
-                                            <td class="pro-title">
-                                                <a href="#">Endeavor Daytrip</a>
-                                            </td>
-                                            <td class="pro-price">
-                                                <span>$295.00</span>
-                                            </td>
-                                            <td class="pro-quantity">
-                                                <div class="pro-qty">
-                                                    <input type="text" value="1">
-                                                </div>
-                                            </td>
-                                            <td class="pro-subtotal">
-                                                <span>$295.00</span>
-                                            </td>
-                                            <td class="pro-remove">
-                                                <a href="#">
-                                                    <i class="fa fa-trash"></i>
-                                                </a>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-
-                            <div class="cart-update-option d-block d-md-flex justify-content-between">
-                                <div class="apply-coupon-wrapper">
-                                    <form action="#" method="post" class=" d-block d-md-flex">
-                                        <input type="text" placeholder="Enter Your Coupon Code" required />
-                                        <button class="square-btn">Apply Coupon</button>
-                                    </form>
+                        <div class="col-lg-6">
+                            <div class="faq-inner">
+                                <div class="faq-title">
+                                    <h2>General Question</h2>
                                 </div>
-                                <div class="cart-update">
-                                    <a href="#" class="square-btn">Update Cart</a>
+                                <div class="accordion" id="general-question">
+                                    <div class="card">
+                                        <div class="card-header" id="headingOne">
+                                            <h5 class="mb-0">
+                                                <button class="accordion-heading" type="button" data-toggle="collapse" data-target="#collapseOne"
+                                                    aria-expanded="true" aria-controls="collapseOne">
+                                                    <i class="fas fa-award"></i>
+                                                    100% money back guarantee
+                                                </button>
+                                            </h5>
+                                        </div>
+                    
+                                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#general-question">
+                                            <div class="card-body">
+                                                This is our motto and we are experts in delivering the best 100% organicfoods on
+                                                the market. We work with more than 60 farms all over the country. We’re a locally
+                                                owned business with staff that has decades of experiencein the field of health and
+                                                firm roots in the health food industry
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="headingTwo">
+                                            <h5 class="mb-0">
+                                                <button class="accordion-heading" type="button" data-toggle="collapse" data-target="#collapseTwo"
+                                                    aria-controls="collapseTwo">
+                                                    <i class="fas fa-car"></i>
+                                                    Fast Free Delivery
+                                                </button>
+                                            </h5>
+                                        </div>
+                    
+                                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#general-question">
+                                            <div class="card-body">
+                                                This is our motto and we are experts in delivering the best 100% organicfoods on
+                                                the market. We work with more than 60 farms all over the country. We’re a locally
+                                                owned business with staff that has decades of experiencein the field of health and
+                                                firm roots in the health food industry
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="headingThree">
+                                            <h5 class="mb-0">
+                                                <button class="accordion-heading" type="button" data-toggle="collapse" data-target="#collapseThree"
+                                                    aria-controls="collapseThree">
+                                                    <i class="fas fa-graduation-cap"></i>
+                                                    Rich Experience
+                                                </button>
+                                            </h5>
+                                        </div>
+                    
+                                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#general-question">
+                                            <div class="card-body">
+                                                This is our motto and we are experts in delivering the best 100% organicfoods on
+                                                the market. We work with more than 60 farms all over the country. We’re a locally
+                                                owned business with staff that has decades of experiencein the field of health and
+                                                firm roots in the health food industry
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="headingfive">
+                                            <h5 class="mb-0">
+                                                <button class="accordion-heading" type="button" data-toggle="collapse" data-target="#collapseFour"
+                                                    aria-controls="collapseFour">
+                                                    <i class="fas fa-car"></i>
+                                                    Fast Free Delivery
+                                                </button>
+                                            </h5>
+                                        </div>
+                    
+                                        <div id="collapseFour" class="collapse" aria-labelledby="headingfive" data-parent="#general-question">
+                                            <div class="card-body">
+                                                This is our motto and we are experts in delivering the best 100% organicfoods on
+                                                the market. We work with more than 60 farms all over the country. We’re a locally
+                                                owned business with staff that has decades of experiencein the field of health and
+                                                firm roots in the health food industry
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="headingsix">
+                                            <h5 class="mb-0">
+                                                <button class="accordion-heading" type="button" data-toggle="collapse" data-target="#collapseFive"
+                                                    aria-controls="collapseFive">
+                                                    <i class="fas fa-graduation-cap"></i>
+                                                    Rich Experience
+                                                </button>
+                                            </h5>
+                                        </div>
+                    
+                                        <div id="collapseFive" class="collapse" aria-labelledby="headingsix" data-parent="#general-question">
+                                            <div class="card-body">
+                                                This is our motto and we are experts in delivering the best 100% organicfoods on
+                                                the market. We work with more than 60 farms all over the country. We’re a locally
+                                                owned business with staff that has decades of experiencein the field of health and
+                                                firm roots in the health food industry
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-5 ml-auto">
-                            <div class="cart-calculator-wrapper">
-                                <div class="cart-calculate-items">
-                                    <h3>Cart Totals</h3>
-                                    <div class="table-responsive">
-                                        <table class="table">
-                                            <tr>
-                                                <td>Sub Total</td>
-                                                <td>$230</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Shipping</td>
-                                                <td>$70</td>
-                                            </tr>
-                                            <tr class="total">
-                                                <td>Total</td>
-                                                <td class="total-amount">$300</td>
-                                            </tr>
-                                        </table>
+                        <div class="col-lg-6">
+                            <div class="faq-inner padding">
+                                <div class="faq-title">
+                                    <h2>Payment & Gift card</h2>
+                                </div>
+                                <div class="accordion" id="payment">
+                                    <div class="card">
+                                        <div class="card-header" id="headingSix">
+                                            <h5 class="mb-0">
+                                                <button class="accordion-heading" type="button" data-toggle="collapse" data-target="#collapseSix"
+                                                    aria-expanded="true" aria-controls="collapseSix">
+                                                    <i class="fas fa-award"></i>
+                                                    Lorem ipsum dolor sit
+                                                </button>
+                                            </h5>
+                                        </div>
+                    
+                                        <div id="collapseSix" class="collapse show" aria-labelledby="headingSix" data-parent="#payment">
+                                            <div class="card-body">
+                                                This is our motto and we are experts in delivering the best 100% organicfoods on
+                                                the market. We work with more than 60 farms all over the country. We’re a locally
+                                                owned business with staff that has decades of experiencein the field of health and
+                                                firm roots in the health food industry
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="headingSeven">
+                                            <h5 class="mb-0">
+                                                <button class="accordion-heading" type="button" data-toggle="collapse" data-target="#collapseSeven"
+                                                    aria-controls="collapseSeven">
+                                                    <i class="fas fa-car"></i>
+                                                    Fast Free Delivery
+                                                </button>
+                                            </h5>
+                                        </div>
+                    
+                                        <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#payment">
+                                            <div class="card-body">
+                                                This is our motto and we are experts in delivering the best 100% organicfoods on
+                                                the market. We work with more than 60 farms all over the country. We’re a locally
+                                                owned business with staff that has decades of experiencein the field of health and
+                                                firm roots in the health food industry
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="headingEight">
+                                            <h5 class="mb-0">
+                                                <button class="accordion-heading" type="button" data-toggle="collapse" data-target="#collapseEight"
+                                                    aria-controls="collapseEight">
+                                                    <i class="fas fa-graduation-cap"></i>
+                                                    Rich Experience
+                                                </button>
+                                            </h5>
+                                        </div>
+                    
+                                        <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#payment">
+                                            <div class="card-body">
+                                                This is our motto and we are experts in delivering the best 100% organicfoods on
+                                                the market. We work with more than 60 farms all over the country. We’re a locally
+                                                owned business with staff that has decades of experiencein the field of health and
+                                                firm roots in the health food industry
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="headingNine">
+                                            <h5 class="mb-0">
+                                                <button class="accordion-heading" type="button" data-toggle="collapse" data-target="#collapseNine"
+                                                    aria-controls="collapseNine">
+                                                    <i class="fas fa-car"></i>
+                                                    Fast Free Delivery
+                                                </button>
+                                            </h5>
+                                        </div>
+                    
+                                        <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#payment">
+                                            <div class="card-body">
+                                                This is our motto and we are experts in delivering the best 100% organicfoods on
+                                                the market. We work with more than 60 farms all over the country. We’re a locally
+                                                owned business with staff that has decades of experiencein the field of health and
+                                                firm roots in the health food industry
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="headingTen">
+                                            <h5 class="mb-0">
+                                                <button class="accordion-heading" type="button" data-toggle="collapse" data-target="#collapseTen"
+                                                    aria-controls="collapseTen">
+                                                    <i class="fas fa-graduation-cap"></i>
+                                                    Rich Experience
+                                                </button>
+                                            </h5>
+                                        </div>
+                    
+                                        <div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#payment">
+                                            <div class="card-body">
+                                                This is our motto and we are experts in delivering the best 100% organicfoods on
+                                                the market. We work with more than 60 farms all over the country. We’re a locally
+                                                owned business with staff that has decades of experiencein the field of health and
+                                                firm roots in the health food industry
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <a href="checkout.html" class="square-btn d-block text-center">Proceed To Checkout</a>
                             </div>
                         </div>
                     </div>
@@ -451,8 +565,7 @@
                             </div>
                             <div class="newsletter-box">
                                 <form id="mc-form">
-                                    <input type="email" id="mc-email" autocomplete="off"
-                                        placeholder="Your Email address">
+                                    <input type="email" id="mc-email" autocomplete="off" placeholder="Your Email address">
                                     <button class="newsletter-btn" id="mc-submit">
                                         <i class="far fa-envelope"></i>
                                     </button>
@@ -543,8 +656,8 @@
                         <div class="footer-widget profile-company">
                             <div class="footer-widget-title pb-3">
                                 <div class="footer-logo">
-                                    <a href="list.html">
-                                        <img src="dist/assets/img/logo/hieu.png" alt="">
+                                    <a href="index.html">
+                                        <img src="dist/assets/img/logo/logo-small.png" alt="">
                                     </a>
                                 </div>
                             </div>
@@ -641,11 +754,10 @@
     </div>
     <!-- Scroll to Top End -->
 
-    <script type="text/javascript" src="dist/assets/js/firebaseCon.js"></script>
     <script type="text/javascript" src="dist/venus-ui.js"></script>
     <script type="text/javascript" src="dist/assets/packages/owl-carousel/owl.carousel.js"></script>
+    <script type="text/javascript" src="dist/assets/packages/nice-select/nice-select.js"></script>
     <script type="text/javascript" src="dist/assets/js/theme.js"></script>
-    <script type="text/javascript" src="dist/assets/js/cart.js"></script>
 </body>
 
 </html>
